@@ -1,0 +1,30 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+
+{% block css_files %} 
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12">
+                <form method="POST" novalidate enctype="multipart/form-data">
+                    {% csrf_token %}
+
+                    {% include 'partials/_form.html' %}
+                    
+                    <button type="submit" class="btn btn-primary">Kaydet</button>
+                    
+                </form>
+            </div>
+            
+        </div>
+    </div>
+{% endblock %}
+
+{% block js_files %} 
+    <script src="{% static 'js/script.js' %}"></script>
+{% endblock %}

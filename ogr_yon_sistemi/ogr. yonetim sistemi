@@ -1,0 +1,45 @@
+Proje Adı: Django Öğrenci Yönetim Sistemi
+Görevler:
+Django Projesi Oluşturma:
+Django'nun en son sürümünü yükleyin.
+Bir Django projesi oluşturun: django-admin startproject student_management_project.
+Django Uygulamaları Ekleme:
+İki Django uygulaması oluşturun: students ve courses.
+Her iki uygulamayı projenize ekleyin: INSTALLED_APPS listesine ekleyin.
+
+
+
+Kullanıcı Kimlik Doğrulama:
+Django'nun yerleşik kullanıcı kimlik doğrulama sistemini kullanarak kullanıcı kaydı ve oturum açma işlemlerini sağlayın.
+django.contrib.auth ile ilgili ayarları ve URL rotalarını yapılandırın.
+Kayıtlı kullanıcılar için giriş yapma ve çıkış yapma işlemlerini ekleyin.
+Öğrenci Modeli Oluşturma:
+students uygulamasında bir Student modeli oluşturun. Bu model, öğrenci bilgilerini temsil edecektir.
+Modelde öğrenci adı, soyadı, doğum tarihi, kayıt tarihi gibi alanları tanımlayın.
+Öğrencilere öğretmen ataması yapılabilmesi için bir "sınıf öğretmeni" alanı ekleyin.
+Öğretmen Modeli Oluşturma:
+students uygulamasında bir Teacher modeli oluşturun. Bu model, öğretmen bilgilerini temsil edecektir.
+Modelde öğretmen adı, soyadı, uzmanlık alanı gibi alanları tanımlayın.
+Ders Modeli Oluşturma:
+courses uygulamasında bir Course modeli oluşturun. Bu model, ders bilgilerini temsil edecektir.
+Modelde ders adı, ders kodu, öğretmen (bir ForeignKey ile öğretmen modeline bağlanarak), ders programı gibi alanları tanımlayın.
+Modeli veritabanına uygulayın.
+
+************************************************************************************************************************************************
+************************************************************************************************************************************************
+
+Öğrenci ve Ders Yönetimi:
+Öğrencilerin kayıt olabileceği ve derslere kaydolabileceği bir arayüz oluşturun.
+
+Öğrencilerin notlarını ve ders programlarını görüntüleyebilecekleri sayfalar ekleyin.
+
+Yöneticilerin öğrenci, öğretmen ve ders bilgilerini yönetebilecekleri bir yönetici arayüzü ekleyin.
+
+Görsel Tasarım:
+Tema ve stil için CSS kullanarak kullanıcı arayüzünü özelleştirin.
+Bootstrap veya başka bir CSS çerçevesi kullanabilirsiniz.
+Testler:
+Uygulamanızı test etmek için Django'nun yerleşik test çerçevesini kullanın.
+Deployment:
+Projenizi bir web sunucusuna dağıtmak için platforma uygun bir hosting hizmeti seçin (pythonanywhere).
+Web sunucusuna proje dosyalarınızı yükleyin ve gerekli yapılandırmaları yapın.
